@@ -3,11 +3,13 @@
 {% block body_id 'blog_index' %}
 
 {% block main %}
+    <h1>This testing page modified by zeko :P </h1>
     {% for post in posts %}
         <article class="post">
             <h2>
+                Author E-mail :
                 <a href="{{ path('blog_post', { slug: post.slug }) }}">
-                    {{ post.title }}
+                    {{ post.authorEmail  }}
                 </a>
             </h2>
 
